@@ -71,4 +71,27 @@ Global Price Alignment: Harmonize MSRPs across leaky borders to eliminate the in
 
 Tracking: Implement unique serial number tracking for top-flagged products to trace leakage back to the source.
 
+###### **📊 The BI Intelligence Center**
+![finaldashboard](https://github.com/user-attachments/assets/5e61575e-0cc6-465d-add6-7a6cf745b31d)
+
+Retail Sales Performance Dashboard Interactive Command Center for Executive Decision-Making
+
+Total Sales Monitored: $1,317,113 (Real-time tracking of global revenue).
+
+Revenue at Risk: Automated identification of leakage hotspots in the UK and Netherlands.
+
+Price Erosion Analysis: Direct comparison of Average Unit Price vs. MSRP baselines across 1,000+ SKUs.
+
+###### **🧠 The Multi-Language Pipeline**
+This project utilizes a "Polyglot" architecture, leveraging Python for machine learning and R for statistical forensic validation.
+## Pipeline Overview
+
+| Stage                 | Language | Key Component                                                                 |
+|-----------------------|----------|--------------------------------------------------------------------------------|
+| Detection Engine      | Python   | Isolation Forest (Unsupervised ML) to isolate outliers in price/quantity space |
+| Feature Engineering   | Python   | Custom PVI (Price Variance Index) to normalize deviations across currencies   |
+| Statistical Forensic  | R        | 3-Sigma Validation to mathematically confirm anomalies with Z-scores up to 80+|
+| Advanced Visualization| R        | Ridgeline & Hexbin Heatmaps for regional risk "fingerprinting"                |
+
+
 
