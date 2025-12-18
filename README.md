@@ -1,14 +1,36 @@
-A strong technical summary bridges the gap between raw code and business value. You should structure it to highlight the Pipeline Architecture.
+**AIGuard: AI-Driven Grey Market & Anomaly Detection**
 
-Project: AIGuard - Grey Market Detection Pipeline
-Technical Overview: Our solution implements an unsupervised machine learning pipeline to identify unauthorized "Grey Market" transactions within global retail logs. By shifting from rule-based filters to anomaly isolation, we detect subtle "Parallel Trade" patterns that manual auditing misses.
+Predicting Revenue Leakage & Unauthorized Distribution in Global Retail
 
-Pipeline Stages:
+📌 Project Overview
 
-Data Ingestion: Automated cleaning of 500k+ records from the UCI Online Retail II dataset, handling multinational currencies and wholesale noise.
+AIGuard is an end-to-end machine learning solution designed to detect Grey Market (Parallel Import) activities. By analyzing over 500,000 global transactions, the system identifies unauthorized "bulk dumping" and significant price erosion that can cannibalize brand revenue.
 
-Feature Engineering: Introduction of the Price Variance Index (PVI), a normalized metric calculating the percentage deviation of UnitPrice from a median-derived MSRP baseline.
+📊 Key Insights & Visualizations
 
-Anomaly Detection: Deployment of an Isolation Forest ensemble. The model isolates outliers by measuring the "path length" required to separate a data point in a random tree structure.
+Price Variance Index (PVI): Our engineered metric reveals that 5% of the market operates at discounts exceeding 60%, a major red flag for unauthorized sales.
 
-Persistence & Serving: The trained model is serialized as a .joblib artifact for lightweight, real-time inference.
+Geographic Hotspots: The model identified the UK, Netherlands, and Australia as high-risk hubs for price erosion.
+
+Wholesale Leakage: Scatter plots clearly distinguish "Normal Retail" from "Unauthorized Wholesale" clusters (High Volume + Deep Discount).
+
+🧠 The AI Pipeline
+Data Ingestion: Processed the UCI Online Retail II dataset (multinational transactional logs).
+
+Feature Engineering: Calculated PVI to normalize price deviations across different products and currencies.
+
+Model: Deployed an Unsupervised Isolation Forest algorithm to isolate outliers without requiring pre-labeled fraud data.
+
+Inference: Serialized the model into a .joblib artifact for real-time risk scoring.
+
+🚨 Real-Time Detection
+Our Colab-based Inference Simulator allows users to input new transactions and receive an instant risk assessment.
+
+Example Alert: "Suspicious Transaction Found: 1,200 units of 'Medium Ceramic Top Jar' flagged at 64% discount."
+
+🚀 Strategic Recommendations
+Supply Chain Forensic: Perform deep-dives into wholesalers moving high-risk SKUs like "Heart Card Holders".
+
+Global Price Alignment: Harmonize MSRPs across leaky borders to eliminate the incentive for "Geographic Arbitrage".
+
+Tracking: Implement unique serial number tracking for top-flagged products to trace leakage back to the source.
