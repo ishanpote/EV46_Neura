@@ -13,6 +13,8 @@ AIGuard is an end-to-end machine learning solution designed to detect Grey Marke
 
 
 ###### **📊 Key Insights \& Visualizations**
+<img width="678" height="521" alt="Screenshot 2025-12-18 222159" src="https://github.com/user-attachments/assets/257003e0-c986-4218-b114-a9eb40b29747" />
+
 
 Price Variance Index (PVI): Our engineered metric reveals that 5% of the market operates at discounts exceeding 60%, a major red flag for unauthorized sales.
 
@@ -45,6 +47,9 @@ Inference: Serialized the model into a .joblib artifact for real-time risk scori
 
 
 ###### **🚨 Real-Time Detection**
+<img width="698" height="320" alt="Screenshot 2025-12-18 222243" src="https://github.com/user-attachments/assets/8828e2b1-f866-457d-9c8a-d0d284150b7a" />
+<img width="600" height="155" alt="Screenshot 2025-12-18 222249" src="https://github.com/user-attachments/assets/9833c7d8-6a44-4af6-9257-7155c2cd35de" />
+
 
 Our Colab-based Inference Simulator allows users to input new transactions and receive an instant risk assessment.
 
@@ -65,4 +70,5 @@ Global Price Alignment: Harmonize MSRPs across leaky borders to eliminate the in
 
 
 Tracking: Implement unique serial number tracking for top-flagged products to trace leakage back to the source.
+
 
